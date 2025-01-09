@@ -1,2 +1,24 @@
-# api-gateway-mock
-mock api server for testing frontend
+# API Gateway mock
+
+Простой mock API сервер, играющий роль заглушки backend части
+для тестирования frontend.
+
+## Установка
+
+Для установки потребуется Python версии `3.12` и утилита [`uv`](https://docs.astral.sh/uv/). Ее можно установить следующим образом:
+
+```shell
+python3 -m pip install uv
+```
+
+Для запуска сервера необходимо ввести следующие команды:
+
+```shell
+uv sync  # подготовка окружения, установка зависимостей
+uv run uvicorn main:app --reload  # запуск uvicorn сервера
+```
+
+## Полезное
+
+- `/docs` - страница с swagger документацией, где можно самому попробовать
+  отправить запросы на сервер
